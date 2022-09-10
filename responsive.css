@@ -1,0 +1,23 @@
+/* 880 x 731p */
+/* Cut-Off Responsiveness, Auto */
+
+/* @media screen and (max-width:800px) {
+  .grid-column {
+       width: 100%;
+      width: auto;
+      height: auto;
+  }
+  .centered-grid {
+    width: auto;
+  }
+}
+
+/* For Mobile */
+/* @media screen and (max-width:600px) {
+  .grid-column {
+      width: 100%;
+  }
+  .centered-grid {
+    width: auto;
+  }
+} */

@@ -1,0 +1,139 @@
+body {
+  background-color: #2F3E4A;  /* #717488 */
+}
+* {
+
+}
+
+.centered-grid {
+  border-radius: 10px;
+  background-color: #717488;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: auto auto; /* repeat(auto-fit, minmax(100px, 1fr)), repeat(auto-fit, minmax(100px, 1fr)) */
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  /* margin-bottom: 15%; */
+}
+.centered {
+  border-radius: 10px;
+  background-color: #717488;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  margin-top: 15%;
+  font-family: "Courier New", Courier, monospace;
+  /* margin-bottom: 15%; */
+}
+.grid-column {
+  width: 300px;
+}
+
+@media screen and (max-width:800px) { /* 1070px */
+  .grid-column {
+      width: auto;
+      height: auto;
+  }
+  .centered-grid {
+    width: auto;
+  }
+}
+
+/* Mobile Media Query */
+
+@media screen and (max-width:400px) {
+  .grid-column {
+    width: auto;
+    height: auto;
+  }
+  .centered-grid {
+    width: auto;
+    margin: auto auto auto auto;
+  }
+}
+
+.input {
+  background-color: #58748A;
+  font-family: "Courier New", Courier, monospace;
+}
+.submit {
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: gray;
+  transition: all .5s ease-in; /* idk if i should shorten the transition or not -ethan */
+}
+
+input[type=submit]:hover {
+  transition: all .5s ease-in; /* .2s ease transition */
+  background-color: white;
+  cursor: pointer;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: white;
+}
+
+/* this is something you can change, just adding it so that i can see it easily */
+/* I think it's good for the alpha version, we can leave that as is for now -ethan */
+.invalid {
+  color: red;
+}
+
+.chatbox {
+  background-color: #717488;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  height: 500px;
+  font-family: "Courier New", Courier, monospace;
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+.userinput {
+  background-color: #717488;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.strech {
+  width: 70%;
+  background-color: #2F3E4A;
+  height: 30px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.footer {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #717488;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #5a5d6d;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d7d7d;
+}
+/* ::-webkit-scrollbar-thumb:active {
+  background: #808080;
+} */
